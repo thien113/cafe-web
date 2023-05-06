@@ -8,3 +8,16 @@
   --accent-light: #f2dcb3;
   --bg-light: #f2efe9;
 }
+* {
+  box-sizing: border-box;
+}
+main {
+  background-color: var(--accent-light);
+}
+header {
+  color: var(--accent);
+}
+footer {
+  color: var(--bg-light);
+  background-color: var(--dark);
+}
