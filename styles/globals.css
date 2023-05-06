@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --dark: #1c0c01;
   --accent: #603322;
@@ -12,7 +11,8 @@
   box-sizing: border-box;
 }
 main {
-  background-color: var(--accent-light);
+  background-color: var(--bg-light);
+  padding: 50px;
 }
 header {
   color: var(--accent);
