@@ -4,9 +4,9 @@ const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 console.log(playfairDisplay);
 export default function Home() {
   return (
-    <>
+    <div className="my-12">
       <h1 className={playfairDisplay.className}>Title</h1>
       <p id="start">Hallo</p>
-    </>
+    </div>
   );
 }

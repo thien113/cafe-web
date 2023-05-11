@@ -13,7 +13,7 @@ export default function Header() {
     setClicked(!clicked);
   }
   return (
-    <header className="flex flex-row justify-between font-bold relative ">
+    <header className="flex flex-row justify-between items-end font-bold relative ">
       <Image
       src={logo}
       width={180}
@@ -21,7 +21,7 @@ export default function Header() {
       alt="Cozy Coffee"
     />
     <button><FontAwesomeIcon icon={faBars} style={{ fontSize: 25}} onClick={toggle} /></button>
-      {clicked && <nav className="flex flex-col font-normal absolute top-20 right-0">
+      {clicked && <nav className="flex flex-col font-normal absolute top-12 right-0 border">
         <a href="#">Menu</a>
         <a href="#">About Us</a>
         <a href="#">Blog</a>
