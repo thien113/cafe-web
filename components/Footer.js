@@ -10,7 +10,7 @@ import {
   faArrowCircleUp
 } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
-  return <footer className="p-12 md:p-18 relative">
+  return <footer className="p-12 md:py-18 md:pt-18 relative">
     <button className="absolute top-6 right-6"><FontAwesomeIcon icon={faArrowCircleUp} style={{ fontSize: 40}} /><a href="#start"></a></button>
     <div className="flex flex-col gap-4 font-light md:flex-row md:justify-around">
       <ul className="flex flex-col ">
@@ -32,7 +32,7 @@ export default function Footer() {
       </ul>
     </div>
     
-    <ul className='flex flex-row gap-2 font-light justify-center items-center'>
+    <ul className='flex flex-row gap-2 font-light justify-center items-center md:justify-around'>
     <Image
       src={logo}
       width={150}
