@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <h1 className={playfairDisplay.className}>Title</h1>
-      <p>Hallo</p>
+      <p id="start">Hallo</p>
     </>
   );
 }
