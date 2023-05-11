@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/brand/cozy-coffee-light.svg"
-
 import {
   faPhone,
   faEnvelope,
@@ -9,6 +8,7 @@ import {
   faMapLocation,
   faArrowCircleUp
 } from "@fortawesome/free-solid-svg-icons";
+
 export default function Footer() {
   return <footer className="p-12 md:py-18 md:pt-18 relative">
     <button className="absolute top-6 right-6"><FontAwesomeIcon icon={faArrowCircleUp} style={{ fontSize: 40}} /><a href="#start"></a></button>
