@@ -21,3 +21,11 @@ footer {
   color: var(--bg-light);
   background-color: var(--dark);
 }
+p {
+  color: var(--accent);
+}
+.favorites {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
