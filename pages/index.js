@@ -1,7 +1,7 @@
 import Benefits from "@/components/Benefits";
 import Blog from "@/components/Blog";
 import Button from "@/components/Button";
-import Carousel from "@/components/Carousel";
+import Categories from "@/components/Categories";
 import Favorites from "@/components/Favorites";
 import Review from "@/components/Review";
 import { Playfair_Display } from "next/font/google";
@@ -29,7 +29,7 @@ export default function Home() {
         fill={true}
         style={imageStyle}
       />*/}
-      <Carousel font={playfairDisplay.className} />
+      <Categories font={playfairDisplay.className} />
       <Benefits font={playfairDisplay.className} />
       <Favorites font={playfairDisplay.className} />
       <Blog className={playfairDisplay.className} />
