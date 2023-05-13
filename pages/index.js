@@ -3,6 +3,7 @@ import Blog from "@/components/Blog";
 import Button from "@/components/Button";
 import Carousel from "@/components/Carousel";
 import Favorites from "@/components/Favorites";
+import Review from "@/components/Review";
 import { Playfair_Display } from "next/font/google";
 //import Image from "next/image";
 
@@ -41,11 +42,7 @@ export default function Home() {
         <span className={playfairDisplay.className}>Blog</span>
       </h4>
       <Blog />
-      <h4 className="text-2xl font-bold text-center text-coffee-dark underline underline-offset-8 decoration-coffee-accent my-14">
-        <span className={playfairDisplay.className}>
-          Loved By Many Customers
-        </span>
-      </h4>
+      <Review font={playfairDisplay.className} />
     </>
   );
 }
