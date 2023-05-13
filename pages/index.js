@@ -35,10 +35,7 @@ export default function Home() {
         <span className={playfairDisplay.className}>Why choosing us</span>
       </h4>
       <Benefits />
-      <h4 className="text-2xl font-bold text-center text-coffee-accent underline underline-offset-8 decoration-coffee-accent my-14">
-        <span className={playfairDisplay.className}>Favorites</span>
-      </h4>
-      <Favorites />
+      <Favorites font={playfairDisplay.className} />
     </>
   );
 }
