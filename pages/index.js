@@ -14,6 +14,7 @@ const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 };*/
 export default function Home() {
   return (
+<<<<<<< HEAD
     <>
       <h1 className={playfairDisplay.className}>
         <span className="text-4xl font-bold">Enjoy Your Morning Coffee</span>
@@ -35,5 +36,11 @@ export default function Home() {
       <Blog className={playfairDisplay.className} />
       <Review font={playfairDisplay.className} />
     </>
+=======
+    <div className="my-12">
+      <h1 className={playfairDisplay.className}>Title</h1>
+      <p id="start">Hallo</p>
+    </div>
+>>>>>>> main
   );
 }
