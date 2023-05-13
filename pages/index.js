@@ -1,6 +1,7 @@
 import Benefits from "@/components/Benefits";
 import Button from "@/components/Button";
 import Carousel from "@/components/Carousel";
+import Favorites from "@/components/Favorites";
 import { Playfair_Display } from "next/font/google";
 //import Image from "next/image";
 
@@ -34,6 +35,10 @@ export default function Home() {
         <span className={playfairDisplay.className}>Why choosing us</span>
       </h4>
       <Benefits />
+      <h4 className="text-2xl font-bold text-center text-coffee-accent underline underline-offset-8 decoration-coffee-accent my-14">
+        <span className={playfairDisplay.className}>Favorites</span>
+      </h4>
+      <Favorites />
     </>
   );
 }

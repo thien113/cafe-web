@@ -24,3 +24,8 @@ footer {
 p {
   color: var(--accent);
 }
+.favorites {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
