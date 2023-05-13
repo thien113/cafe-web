@@ -21,3 +21,6 @@ footer {
   color: var(--bg-light);
   background-color: var(--dark);
 }
+p {
+  color: var(--accent);
+}

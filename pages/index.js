@@ -1,12 +1,27 @@
 import { Playfair_Display } from "next/font/google";
+//import Image from "next/image";
 
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
-console.log(playfairDisplay);
+/*const imageStyle = {
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+};*/
 export default function Home() {
   return (
     <>
-      <h1 className={playfairDisplay.className}>Title</h1>
-      <p>Hallo</p>
+      <h1 className={playfairDisplay.className}>
+        <span className="text-4xl font-bold">Enjoy Your Morning Coffee</span>
+      </h1>
+      <p className="text-md my-6 leading-none text-justify w-2/3 font-medium">
+        Boost your productivity and build your mood with a cup of coffee in the
+        morning.
+      </p>
+      {/* <Image
+        src="/coffee-cover.svg"
+        alt="coffee"
+        fill={true}
+        style={imageStyle}
+      />*/}
     </>
   );
 }
