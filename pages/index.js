@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import { Playfair_Display } from "next/font/google";
 //import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function Home() {
         Boost your productivity and build your mood with a cup of coffee in the
         morning.
       </p>
+      <Button text="View Menu" />
       {/* <Image
         src="/coffee-cover.svg"
         alt="coffee"
