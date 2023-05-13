@@ -29,19 +29,10 @@ export default function Home() {
         fill={true}
         style={imageStyle}
       />*/}
-      <h4 className="text-2xl font-bold text-center text-coffee-dark underline underline-offset-8 decoration-coffee-accent my-14">
-        <span className={playfairDisplay.className}>From Our Menu</span>
-      </h4>
-      <Carousel />
-      <h4 className="text-2xl font-bold text-center text-coffee-dark underline underline-offset-8 decoration-coffee-accent my-14">
-        <span className={playfairDisplay.className}>Why choosing us</span>
-      </h4>
-      <Benefits />
+      <Carousel font={playfairDisplay.className} />
+      <Benefits font={playfairDisplay.className} />
       <Favorites font={playfairDisplay.className} />
-      <h4 className="text-2xl font-bold text-center text-coffee-dark underline underline-offset-8 decoration-coffee-accent my-14">
-        <span className={playfairDisplay.className}>Blog</span>
-      </h4>
-      <Blog />
+      <Blog className={playfairDisplay.className} />
       <Review font={playfairDisplay.className} />
     </>
   );
