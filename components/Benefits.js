@@ -17,10 +17,10 @@ export default function Benefits() {
   return (
     <section className="my-14 md:p-24"> 
       <h4 className="text-4xl font-bold text-center text-coffee-dark underline underline-offset-8 decoration-coffee-accent my-14">
-        <h6>Our Benefits</h6>
+        Our Benefits
       </h4>
-      <div className="flex flex-row justify-between">
-        <div className="bg-img relative hidden xl:inline-block">
+      <div className="flex flex-row justify-center">
+        <div className="bg-img relative hidden xl:inline-block m-12">
           <Image className="relative align-bottom z-10" src={shop} width={400}
                 height={500}
                 alt="Cozy Coffee"/>
