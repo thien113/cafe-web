@@ -42,3 +42,9 @@ p {
   background-color: var(--accent-light);
   transform: rotate(45deg);
 }
+.dotted{
+  width: 20%;
+  border-top: 4px dotted var(--dark);
+  margin: 23px 2px 0 2px;
+  transform: rotate(-0.07deg);
+}
