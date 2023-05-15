@@ -1,3 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapPin,
+  faCertificate,
+  faMugHot,
+  faWifi
+} from "@fortawesome/free-solid-svg-icons";
 import Badge from "./Badge";
 
 export default function Benefits() {
@@ -8,7 +15,7 @@ export default function Benefits() {
       </h4>
       <ul className="flex flex-col text-coffee-dark text-xl font-bold gap-8">
         <li className="flex flex-row gap-4">
-          <Badge />
+          <Badge icon={<FontAwesomeIcon icon={faMapPin} style={{color: "#ffffff",}} />} />
           <span>
             <h6 >Best Location</h6>
             <p className="font-light text-base">
@@ -17,7 +24,7 @@ export default function Benefits() {
           </span>
         </li>
         <li className="flex flex-row gap-4">
-          <Badge />
+          <Badge icon={<FontAwesomeIcon icon={faCertificate} style={{color: "#ffffff",}} />}/>
           <span>
             <h6 >Best Quality</h6>
             <p className="font-light text-base">
@@ -26,7 +33,7 @@ export default function Benefits() {
           </span>
         </li>
         <li className="flex flex-row gap-4">
-          <Badge />
+          <Badge icon={<FontAwesomeIcon icon={faMugHot} style={{color: "#ffffff",}} />} />
           <span>
             <h6 >Natural Coffee</h6>
             <p className="font-light text-base">
@@ -35,7 +42,7 @@ export default function Benefits() {
           </span>
         </li>
         <li className="flex flex-row gap-4">
-          <Badge />
+          <Badge icon={<FontAwesomeIcon icon={faWifi} style={{color: "#ffffff",}} />} />
           <span>
             <h6>Free Wifi</h6>
             <p className="font-light text-base">24/7 Free Wifi for all</p>
