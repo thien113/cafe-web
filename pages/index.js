@@ -13,7 +13,7 @@ const imageStyle = {
 export default function Home() {
   return (
     <>
-      <section className="my-4 bg-no-repeat bg-contain bg-right bg-[url('/coffee-cover-1.svg')] h-auto md:h-screen md:bg-right-top md:ml-12 lg:p-44">
+      <section className="my-4 bg-no-repeat bg-contain bg-right bg-[url('/coffee-cover-1.svg')] h-auto md:h-screen md:bg-right-top md:ml-12 lg:p-32">
         <h1 className="text-4xl md:text-8xl font-bold mt-12 pt-12 ">
           Enjoy Your <br/> Morning Coffee
         </h1>
