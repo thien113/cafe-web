@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <button className="border border-orange-950 rounded-full col-start-6">
+    <button className="hidden md:block md:border md:border-orange-950 md:rounded-full self-center p-2 mr-12">
       <a href="#">Contact Us</a>
     </button>
   );
