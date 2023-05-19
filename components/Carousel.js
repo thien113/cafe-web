@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 
-export default function Carousel({data}){
+export default function Carousel({data, dotBool, slideBeginToShow}){
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -26,8 +26,8 @@ export default function Carousel({data}){
         );
       }
     const settings = {
-        dots: false,
-        slidesToShow: 5,
+        dots: dotBool,
+        slidesToShow: slideBeginToShow,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
@@ -37,7 +37,7 @@ export default function Carousel({data}){
             {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 5,
+                slidesToShow: slideBeginToShow,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 3000,
@@ -67,8 +67,8 @@ export default function Carousel({data}){
             >
             {data.map((d, index )=> (
                 <div key={index}>
-                    <Image src={d.src} className="p-4 rounded-lg" alt={d.title}/>
-                    <h2 className="text-md lg:text-4xl">{d.title}</h2>
+                    <Image src={d.src} className="p-4 rounded-lg" width={700} height={500} alt={d.title}/>
+                    <h2 className="text-sm lg:text-xl p-4">{d.title}</h2>
                 </div>
             ))}
         </Slider>
