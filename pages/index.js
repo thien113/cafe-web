@@ -4,12 +4,7 @@ import Button from "@/components/Button";
 import Categories from "@/components/Categories";
 import Favorites from "@/components/Favorites";
 import Review from "@/components/Review";
-import Image from "next/image";
 
-const imageStyle = {
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-};
 export default function Home() {
   return (
     <>
