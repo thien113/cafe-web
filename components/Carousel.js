@@ -1,6 +1,5 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Slider from "react-slick";
 export default function Carousel(){
     const renderSlides = () =>
@@ -9,10 +8,34 @@ export default function Carousel(){
         <h3>Slide {num}</h3>
       </div>
     ));
+
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "#603322", borderRadius: "50%" }}
+            onClick={onClick}
+          />
+        );
+      }
+      
+      function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "#603322", borderRadius: "50%" }}
+            onClick={onClick}
+          />
+        );
+      }
     const settings = {
         dots: false,
         slidesToShow: 5,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         responsive: [
             {
             breakpoint: 1024,
