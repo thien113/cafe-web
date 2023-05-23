@@ -11,7 +11,7 @@ import {
 export default function About(){
     return (
     <section className="my-4 lg:bg-right-top lg:ml-12 lg:p-32">
-    <h1 className="text-4xl font-bold mt-12 pt-12 text-center ">About Us</h1>
+    <h4 className="text-4xl font-bold mt-12 pt-12 text-center ">About Us</h4>
     <div className="my-4 flex flex-col lg:flex-row justify-center items-center">
         <Image src={about}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

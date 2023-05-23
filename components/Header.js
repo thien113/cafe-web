@@ -28,7 +28,7 @@ export default function Header() {
       {clicked && <nav className="flex flex-col gap-4 font-semibold absolute rounded-sm top-12 right-0 border p-8 bg-bg-light">
         <a href="/menu">Menu</a>
         <a href="/about">About Us</a>
-        <a href="#">Blog</a>
+        <a href="/blog">Blog</a>
         <a href="#">Reviews</a>
         <Contact />
       </nav>
@@ -36,7 +36,7 @@ export default function Header() {
       <nav className="hidden md:flex flex-row justify-between gap-8 font-semibold top-12 p-8 ">
         <a href="/menu">Menu</a>
         <a href="/about">About Us</a>
-        <a href="#">Blog</a>
+        <a href="/blog">Blog</a>
         <a href="#">Reviews</a>
       </nav>
       <Contact />
