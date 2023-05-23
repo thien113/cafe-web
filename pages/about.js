@@ -9,7 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function About(){
-    return <section className="my-4 lg:bg-right-top lg:ml-12 lg:p-32">
+    return (
+    <section className="my-4 lg:bg-right-top lg:ml-12 lg:p-32">
     <h1 className="text-4xl font-bold mt-12 pt-12 text-center ">About Us</h1>
     <div className="my-4 flex flex-col lg:flex-row justify-center items-center">
         <Image src={about}
@@ -35,5 +36,5 @@ export default function About(){
         </ul> 
           </div>
     </div>
-    </section>
+    </section>)
 }

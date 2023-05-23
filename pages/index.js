@@ -18,7 +18,7 @@ export default function Home() {
         </p>
         
         <div className=" md:w-1/2">
-          <Button  text="View Menu" /> 
+          <Button link="/menu" text="View Menu" /> 
         </div>
       </section>
       <Categories />

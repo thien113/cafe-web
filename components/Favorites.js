@@ -46,7 +46,7 @@ export default function Favorites() {
         </li>
       </ul>
       <div className="m-auto w-1/2">
-          <Button text="View Menu" />
+          <Button link="/menu" text="View Menu" />
       </div>
     </section>
   );
