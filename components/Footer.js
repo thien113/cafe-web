@@ -8,10 +8,11 @@ import {
   faMapLocation,
   faArrowCircleUp
 } from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link';
 
 export default function Footer() {
   return <footer className="p-12 md:py-18 md:pt-18 relative">
-    <button className="absolute top-6 right-6"><FontAwesomeIcon icon={faArrowCircleUp} style={{ fontSize: 40}} /><a href="#start"></a></button>
+    <button className="absolute top-6 right-6"><Link href="#start"><FontAwesomeIcon icon={faArrowCircleUp} style={{ fontSize: 40}} /></Link></button>
     <div className="flex flex-col gap-4 font-light md:flex-row md:justify-around">
       <ul className="flex flex-col ">
         <h2 className="font-semibold">Contact</h2>
@@ -25,9 +26,9 @@ export default function Footer() {
         </ul>      
       <ul className="flex flex-col pointer">
         <h2 className="font-semibold">Useful Links</h2>
-        <a href="#">Menu </a>
-        <a href="#">About Us </a>
-        <a href="#">Blog </a>
+        <a href="/menu">Menu </a>
+        <a href="/about">About Us </a>
+        <a href="/blog">Blog </a>
         <a href="#">Reviews </a>
       </ul>
     </div>

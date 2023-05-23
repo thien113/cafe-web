@@ -15,7 +15,7 @@ const roboto = Roboto({
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-    <main className={roboto.className}>
+    <main id="start" className={roboto.className}>
     <style jsx global>{`
         :root {
           --playdairDisplay-font: ${playfairDisplay.style.fontFamily};
