@@ -2,6 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Carousel({data, dotBool, slideBeginToShow}){
     function SampleNextArrow(props) {
@@ -68,7 +69,7 @@ export default function Carousel({data, dotBool, slideBeginToShow}){
             {data.map((d, index )=> (
                 <div key={index}>
                     <Image src={d.src} className="p-4 rounded-lg" width={700} height={500} alt={d.title}/>
-                    <h2 className="text-sm lg:text-xl p-4">{d.title}</h2>
+                    <Link href={`${d.slug}`}><h2 className="text-sm lg:text-xl p-4">{d.title}</h2></Link>
                 </div>
             ))}
         </Slider>

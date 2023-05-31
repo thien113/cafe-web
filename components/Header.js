@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars
 } from "@fortawesome/free-solid-svg-icons";
-import Contact from "./Contact";
 import logo from "../assets/brand/cozy-coffee.svg"
 import { useState } from 'react';
 import Link from 'next/link';
@@ -30,7 +29,6 @@ export default function Header() {
         <a href="/about">About Us</a>
         <a href="/blog">Blog</a>
         <a href="#">Reviews</a>
-        <Contact />
       </nav>
       }
       <nav className="hidden md:flex flex-row justify-between gap-8 font-semibold top-12 p-8 ">
@@ -39,7 +37,6 @@ export default function Header() {
         <a href="/blog">Blog</a>
         <a href="#">Reviews</a>
       </nav>
-      <Contact />
     </header>
   );
 }

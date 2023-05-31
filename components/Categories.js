@@ -12,35 +12,43 @@ export default function Categories() {
   const categories = [
     {
       title: "Coffee",
-      src: coffee
+      src: coffee,
+      slug: "menu"
     },
     {
       title: "Ice Tea",
-      src: iceTea
+      src: iceTea,
+      slug: "menu"
     },
     {
       title: "Pastry",
-      src: pastries
+      src: pastries,
+      slug: "menu"
     },
     {
       title: "Bagels",
-      src: bagels
+      src: bagels,
+      slug: "menu"
     },
     {
       title: "Sandwiches",
-      src: sandwiches
+      src: sandwiches,
+      slug: "menu"
     },
     {
       title: "Bowls",
-      src: bowls
+      src: bowls,
+      slug: "menu"
     },
     {
       title: "Cakes",
-      src: cakes
+      src: cakes,
+      slug: "menu"
     },
     {
       title: "Cupcakes",
-      src: cupcakes
+      src: cupcakes,
+      slug: "menu"
     }
   ];
   return (

@@ -1,10 +1,10 @@
 import { useRouter } from "next/router"
-import post1 from "../../assets/carousel/1.svg";
-import post2 from "../../assets/carousel/2.svg";
-import post3 from "../../assets/carousel/3.svg";
-import post4 from "../../assets/carousel/4.svg";
-import post5 from "../../assets/carousel/5.svg";
-import post6 from "../../assets/carousel/6.svg";
+import post1 from "../assets/carousel/1.svg";
+import post2 from "../assets/carousel/2.svg";
+import post3 from "../assets/carousel/3.svg";
+import post4 from "../assets/carousel/4.svg";
+import post5 from "../assets/carousel/5.svg";
+import post6 from "../assets/carousel/6.svg";
 import Image from "next/image";
 
 export default function BlogPost(){
@@ -45,7 +45,7 @@ export default function BlogPost(){
       ];
       const post = blogPosts.filter(blogpost => blogpost.slug === slug);
     return (
-        <section className="m-4 p-4 lg:bg-right-top lg:ml-12 lg:p-32">
+        <div className="m-4 p-4 lg:bg-right-top lg:ml-12 lg:p-32">
             {post.map(p =>(
             <>
             <h4 className="my-4 text-4xl font-bold mt-12 pt-12 text-center ">{p.title}</h4>
@@ -73,6 +73,6 @@ export default function BlogPost(){
             
         ))}
             
-        </section>
+        </div>
     )
 }
