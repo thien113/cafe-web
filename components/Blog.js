@@ -40,7 +40,7 @@ export default function Blog() {
     },
   ];
   return (
-    <section className="my-14 p-4 md:p-24">
+    <section className="my-14 p-8 md:p-24">
       <h4 className="text-4xl font-bold text-center text-coffee-dark underline underline-offset-8 decoration-coffee-accent my-14">
         Our Latest Blogposts
       </h4>

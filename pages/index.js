@@ -8,7 +8,7 @@ import Review from "@/components/Review";
 export default function Home() {
   return (
     <>
-      <section className="mt-4 bg-no-repeat bg-contain bg-right bg-[url('/coffee-cover-1.svg')] h-auto lg:h-screen lg:bg-right-top lg:ml-12 lg:p-32">
+      <section className="p-4 bg-no-repeat bg-contain bg-right bg-[url('/coffee-cover-1.svg')] h-auto lg:h-screen lg:bg-right-top lg:ml-12 lg:p-32">
         <h1 className="text-4xl md:text-8xl font-bold mt-12 pt-12 ">
           Enjoy Your <br /> Morning Coffee
         </h1>
