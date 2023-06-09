@@ -1,6 +1,7 @@
 import Image from "next/image";
 import customer from "../assets/brand/customer.svg";
 import splash from "../assets/brand/splash.svg";
+import CarouselReview from "./CarouselReview";
 
 export default function Review() {
   return (
@@ -14,12 +15,7 @@ export default function Review() {
         alt="customer"
         className="hidden lg:block  -mr-48 col-start-1 col-span-2 row-start-1 row-span-3"
       />
-        <p className="p-24 lg:p-2 col-start-3 col-span-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          officiis laboriosam quasi unde blanditiis aut nihil expedita quos,
-          veritatis, eaque, culpa dicta nostrum molestias! Dolore eius ipsum
-          similique consequatur ullam.
-        </p>
+      <CarouselReview />
       <Image
         src={splash}
         sizes="(max-width: 500px) 100vw, (max-width: 600px) 50vw, 33vw"

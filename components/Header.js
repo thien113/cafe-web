@@ -11,7 +11,7 @@ export default function Header() {
     setClicked(!clicked);
   }
   return (
-    <header className="flex flex-row justify-between items-start font-bold relative pl-4">
+    <header className="flex flex-row justify-between items-start font-bold relative px-4">
       <Link href="/">
         <Image src={logo} width={180} height={500} alt="Cozy Coffee" />
       </Link>
