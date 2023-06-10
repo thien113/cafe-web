@@ -7,6 +7,7 @@ import person1 from "../assets/brand/person1.svg";
 import person2 from "../assets/brand/person2.svg";
 import person3 from "../assets/brand/person3.svg";
 import person4 from "../assets/brand/person4.svg";
+import Rating from "./Rating";
 
 export default function CarouselReview(){
     const data = [
@@ -77,6 +78,7 @@ export default function CarouselReview(){
                 <div key={index}>
                     <Image src={d.src} className="p-4 rounded-full w-48 m-auto " width={700} height={500} alt={d.src}/>
                     <p className="italic text-center">"{d.text}"</p>
+                    <Rating stars={d.stars}/>
                 </div>
             ))}
         </Slider>

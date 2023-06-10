@@ -20,7 +20,7 @@ export default function Review() {
         src={splash}
         sizes="(max-width: 500px) 100vw, (max-width: 600px) 50vw, 33vw"
         alt="splash"
-        className="hidden lg:block ml-48 col-start-5 -rotate-45"
+        className="hidden lg:block ml-48 col-start-5 col-span-2 -rotate-45"
       />
     </section>
   );
