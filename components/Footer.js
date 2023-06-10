@@ -40,8 +40,8 @@ export default function Footer() {
       height={100}
       alt="Cozy Coffee"
     />
-      <a href="#">Privacy Policy</a> |
-      <a href="#">Terms of Conditions</a>
+      <a href="/privacy-policy">Privacy Policy</a> |
+      <a href="/terms">Terms of Conditions</a>
       </ul> 
   </footer>;
 }
