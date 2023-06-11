@@ -16,13 +16,13 @@ export default function Header() {
         <Image src={logo} width={180} height={500} alt="Cozy Coffee" />
       </Link>
 
-      <button className="md:hidden">
+      <div className="md:hidden">
         <FontAwesomeIcon
           icon={faBars}
           style={{ fontSize: 25 }}
           onClick={toggle}
         />
-      </button>
+      </div>
       {clicked && (
         <nav className="flex flex-col gap-4 font-semibold absolute rounded-sm top-12 right-0 border p-8 bg-bg-light">
           <a href="/menu">Menu</a>

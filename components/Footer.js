@@ -12,7 +12,9 @@ import Link from 'next/link';
 
 export default function Footer() {
   return <footer className="p-12 md:py-18 md:pt-18 relative">
-    <button className="absolute top-6 right-6"><Link href="#start"><FontAwesomeIcon icon={faArrowCircleUp} style={{ fontSize: 40}} /></Link></button>
+    <div className="absolute top-6 right-6">
+      <Link href="#start"><FontAwesomeIcon icon={faArrowCircleUp} style={{ fontSize: 40}} /></Link>
+      </div>
     <div className="flex flex-col gap-4 font-light md:flex-row md:justify-around">
       <ul className="flex flex-col ">
         <h2 className="font-semibold">Contact</h2>
