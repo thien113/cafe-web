@@ -35,15 +35,17 @@ export default function Footer() {
       </ul>
     </div>
     
-    <ul className='flex flex-row gap-2 font-light justify-center items-center md:justify-around'>
-    <Image
-      src={logo}
-      width={150}
-      height={100}
-      alt="Cozy Coffee"
-    />
-      <a href="/privacy-policy">Privacy Policy</a> |
-      <a href="/terms">Terms of Conditions</a>
+    <ul className='flex flex-col md:flex-row gap-2 font-light justify-center items-center md:justify-around'>
+      <Image
+        src={logo}
+        width={150}
+        height={100}
+        alt="Cozy Coffee"
+      />
+      <div>
+        <a href="/privacy-policy">Privacy Policy</a> |
+        <a href="/terms"> Terms of Conditions</a>
+      </div>
       </ul> 
   </footer>;
 }
