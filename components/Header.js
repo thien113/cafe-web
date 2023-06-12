@@ -25,15 +25,15 @@ export default function Header() {
       </div>
       {clicked && (
         <nav className="flex flex-col gap-4 font-semibold absolute rounded-sm top-12 right-0 border p-8 bg-bg-light">
-          <a href="/menu">Menu</a>
-          <a href="/about">About Us</a>
-          <a href="/blog">Blog</a>
+          <Link href="/menu">Menu</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/blog">Blog</Link>
         </nav>
       )}
       <nav className="hidden md:flex flex-row justify-between gap-8 font-semibold top-12 p-8 ">
-        <a href="/menu">Menu</a>
-        <a href="/about">About Us</a>
-        <a href="/blog">Blog</a>
+        <Link href="/menu">Menu</Link>
+        <Link href="/about">About Us</Link>
+        <Link href="/blog">Blog</Link>
       </nav>
     </header>
   );

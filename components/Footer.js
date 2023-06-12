@@ -28,10 +28,10 @@ export default function Footer() {
         </ul>      
       <ul className="flex flex-col pointer">
         <h2 className="font-semibold">Useful Links</h2>
-        <a href="/menu">Menu </a>
-        <a href="/about">About Us </a>
-        <a href="/blog">Blog </a>
-        <a href="#">Reviews </a>
+        <Link href="/menu">Menu </Link>
+        <Link href="/about">About Us </Link>
+        <Link href="/blog">Blog </Link>
+        <Link href="#">Reviews </Link>
       </ul>
     </div>
     
@@ -43,8 +43,8 @@ export default function Footer() {
         alt="Cozy Coffee"
       />
       <div>
-        <a href="/privacy-policy">Privacy Policy</a> |
-        <a href="/terms"> Terms of Conditions</a>
+        <Link href="/privacy-policy">Privacy Policy</Link> |
+        <Link href="/terms"> Terms of Conditions</Link>
       </div>
       </ul> 
   </footer>;
