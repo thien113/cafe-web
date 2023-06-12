@@ -77,7 +77,7 @@ export default function CarouselReview(){
             {data.map((d, index )=> (
                 <div key={index}>
                     <Image src={d.src} className="p-4 rounded-full w-48 m-auto " width={700} height={500} alt={d.src}/>
-                    <p className="italic text-center">"{d.text}"</p>
+                    <p className="italic text-center">&quot;{d.text}&quot;</p>
                     <Rating stars={d.stars}/>
                 </div>
             ))}
