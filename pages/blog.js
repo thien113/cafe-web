@@ -38,7 +38,7 @@ export default function Blog(){
         {
           title: "The Perfect Pairings: Coffee and Food",
           src: post6,
-          sluc: "the-perfect-pairings-coffee-and-food"
+          slug: "the-perfect-pairings-coffee-and-food"
         },
       ];
     return(
@@ -46,7 +46,7 @@ export default function Blog(){
             <h1 className="text-4xl font-bold mt-12 pt-12 ">Blogposts</h1>
             <div className="flex flex-row flex-wrap gap-6">
             {blogPosts.map(p => (
-               <div className="my-4">
+               <div key={p.slug} className="my-4">
                 <Image src={p.src} className="rounded-lg" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={p.title}/>
                 <Link href={`/blogposts/${p.slug}`}><p className="font-semibold my-12 hover:underline hover:decoration-solid">{p.title}</p></Link>
                </div>
