@@ -28,14 +28,12 @@ export default function Header() {
           <a href="/menu">Menu</a>
           <a href="/about">About Us</a>
           <a href="/blog">Blog</a>
-          <a href="#">Reviews</a>
         </nav>
       )}
       <nav className="hidden md:flex flex-row justify-between gap-8 font-semibold top-12 p-8 ">
         <a href="/menu">Menu</a>
         <a href="/about">About Us</a>
         <a href="/blog">Blog</a>
-        <a href="#">Reviews</a>
       </nav>
     </header>
   );
